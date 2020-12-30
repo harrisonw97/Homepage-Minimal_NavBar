@@ -1,0 +1,112 @@
+html{
+    background-image: url("bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 1.6em;
+    margin: 0;
+
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+li{
+    display: inline;
+    padding:  5px 5px;
+}
+
+/* the window / frosted glass background effect */
+#mainHeader{
+    color: white;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+}
+
+/* Wraps the groups of uls */
+.container{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+ /* Button Properties  */
+.HoverButton{
+    min-width: 64px;
+    min-height: 64px;
+    display: inline-block;
+    background-size: cover;
+    opacity: 0.5;
+    margin-top: 11px;
+}
+
+.HoverButton:hover{
+    cursor: pointer;
+    transition: all 0.5s;
+    opacity: 1;
+    transform: scale(1.25);
+    z-index: 10;
+}
+
+/* line that splits the uls from eachother */
+.divLine{
+    margin: 1em 0px;
+    padding: 0px;
+    margin-right: 15px;
+    margin-left: 15px;
+    min-width: 0.05em;
+    display: inline-block;
+    background-color: white;
+    border-radius: 25px;
+}
+
+/* remove all content if browser width falls below 600px */
+@media (max-width:600px){
+    html{
+        display: none;
+    }
+}
+
+/* ID tags for assigning background images to buttons */
+/* Google Sites */
+#Drive{ background-image: url("icons/drive.png"); }
+#Youtube{ background-image: url("icons/youtube.png"); }
+#Gmail{ background-image: url("icons/gmail.png"); }
+#Cal{ background-image: url("icons/cal.png"); }
+#News{ background-image: url("icons/news.png");}
+
+/* Streaming Sites */
+#Hulu{ background-image: url("icons/hulu.png"); }
+#Prime{ background-image: url("icons/prime.png"); }
+#Hbo{ background-image: url("icons/hbo.png"); }
+#Netflix{ background-image: url("icons/netflix.png"); }
+
+/* Education */
+#SNHU{ background-image: url("icons/snhu.png"); }
+#Brightspace{ background-image: url("icons/brightspace.png"); }
+#Mobius{ background-image: url("icons/mobius.png"); }
+#Wolfram{ background-image: url("icons/wolfram.png"); }
+#Webmail{ background-image: url("icons/mail.png");}
+#Zybooks{ background-image: url("icons/zybooks.png");}
+
+/* Misc */
+#Amazon{ background-image: url("icons/amazon.png"); }
+#Weather{ background-image: url("icons/weather.png"); }
+#Plex { background-image: url("icons/plex.png");}
+#Github { background-image: url("icons/github.png");}
+
+.hidden{
+    display: none;
+}
